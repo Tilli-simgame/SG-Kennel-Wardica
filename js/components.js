@@ -30,7 +30,7 @@ function renderHeader() {
         <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-wider mb-4 text-center px-4">
           Kennel Wardica
         </h1>
-        <p class="text-2xl md:text-3xl mb-8 text-center px-4">Lemmikkisi koti kodin ulkopuolella vuodesta 1995</p>
+        <p class="text-2xl md:text-3xl mb-8 text-center px-4">Paimenkoirien kasvattaja</p>
         <button
           id="scroll-down-btn"
           class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded transition duration-300 text-xl"
