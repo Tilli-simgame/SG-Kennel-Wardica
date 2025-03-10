@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Claws Kennel</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#1e3a8a', // blue-900
+              foreground: '#ffffff',
+            },
+            secondary: {
+              DEFAULT: '#3b82f6', // blue-500
+              foreground: '#ffffff',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'VT323', monospace;
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgb(0, 0, 0);
+      background-color: rgb(240, 240, 240);
+    }
+    
+    /* Custom Scrollbar Styles */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 6px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    
+    /* For Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
+    }
+    
+    /* Animation for bounce effect */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    .animate-bounce {
+      animation: bounce 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  
+  <script type="module" src="js/data.js"></script>
+  <script type="module" src="js/utils.js"></script>
+  <script type="module" src="js/router.js"></script>
+  <script type="module" src="js/components.js"></script>
+  <script type="module" src="js/home.js"></script>
+  <script type="module" src="js/dogs.js"></script>
+  <script type="module" src="js/dog-profile.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+
